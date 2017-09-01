@@ -201,6 +201,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
 
       
     </ul>
@@ -311,7 +321,9 @@
 <h3 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s --debug</div></pre></td></tr></table></figure>
 <p>更多信息: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
 <h3 id="生成静态文件并且发布到github上"><a href="#生成静态文件并且发布到github上" class="headerlink" title="生成静态文件并且发布到github上"></a>生成静态文件并且发布到github上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g -d</div></pre></td></tr></table></figure>
-<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a> <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>更多信息: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a> 、 <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="遇到的坑"><a href="#遇到的坑" class="headerlink" title="遇到的坑"></a>遇到的坑</h2><h3 id="上传到自己的github页面"><a href="#上传到自己的github页面" class="headerlink" title="上传到自己的github页面"></a>上传到自己的<a href="https://linjieada.github.io" target="_blank" rel="external">github</a>页面</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: https://github.com/linjieAda/linjieAda.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p>github可以免费搭建个人博客，在_config.yml文件中如上操作，可以把代码上传到这个仓库，页面自然就生成了。</p>
 
           
         
@@ -381,6 +393,10 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
+            <img class="site-author-image" itemprop="image"
+              src="/images/avatar.gif"
+              alt="林莫忘" />
+          
             <p class="site-author-name" itemprop="name">林莫忘</p>
             <p class="site-description motion-element" itemprop="description"></p>
         </div>
@@ -390,7 +406,7 @@
           
             <div class="site-state-item site-state-posts">
             
-              <a href="/archives">
+              <a href="/archives/">
             
                 <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
